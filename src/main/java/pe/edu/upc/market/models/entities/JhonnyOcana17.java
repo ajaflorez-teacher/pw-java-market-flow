@@ -8,6 +8,7 @@ public class JhonnyOcana17 {
 	private String nombre;
 	private Integer edad;
 	private Date FechaNacimiento;
+	private Date Fecha;
 	
 	public Float getId() {
 		return id;
@@ -32,6 +33,12 @@ public class JhonnyOcana17 {
 	}
 	public void setFechaNacimiento(Date fechaNacimiento) {
 		FechaNacimiento = fechaNacimiento;
+	}
+	public Date getFecha() {
+		return Fecha;
+	}
+	public void setFecha(Date fecha) {
+		Fecha = fecha;
 	}
 }
 
