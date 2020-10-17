@@ -24,7 +24,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Entity
-@Table(name = arthur// Snake case	// Plural
+@Table(name = arthur)// Snake case	// Plural
 public class Arthur{	// upper Cammel case
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
