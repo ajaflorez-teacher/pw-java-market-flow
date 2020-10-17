@@ -25,7 +25,9 @@ import javax.persistence.OneToMany;
 
 @Entity
 @Table(name = "arthur")// Snake case	// Plural
-public class Hello {	// upper Cammel case
+
+public class Hello{	// upper Cammel case
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
