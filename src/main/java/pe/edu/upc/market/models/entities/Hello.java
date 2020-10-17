@@ -25,7 +25,7 @@ import javax.persistence.OneToMany;
 
 @Entity
 @Table(name = arthur// Snake case	// Plural
-public class Arthur{	// upper Cammel case
+public class Hello{	// upper Cammel case
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
@@ -59,7 +59,7 @@ public class Arthur{	// upper Cammel case
 	@OneToMany(mappedBy = "cliente")
 	private List<Pedido> pedidos;
 	
-	public Cliente() {
+	public Hello() {
 		pedidos = new ArrayList<Pedido>();
 		this.distritoId = 0;
 	}
