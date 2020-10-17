@@ -1,0 +1,53 @@
+# Clonar el repositorio y inicializar el GitFlow
+
+git clone https://github.com/ajaflorez-teacher/pw-java-market-flow.git
+cd pw-java-market-flow
+git fetch origin develop
+git flow init
+git checkout develop
+
+# Antes de crear un feature 
+# Antes de subir a develop 
+# Antes de hacer un git flow feature finish
+
+git pull origin develop
+
+# Gestionando un feature
+
+git flow feature start HU99_NombreApellido
+git branch
+
+# Editar codigo en un IDE
+
+git add .
+git commit -m "Added JuanSucursal Class"
+git pull origin develop:develop
+git flow feature publish HU11_JuanSucarsales
+
+# En el caso de que tenga que realizar una actualización del feature publicado, eliminar el branch remoto
+git push -D origin feature/HU17_JuanFlores17
+# Modificar el codigo, y luego hace git add, git commit y nuevamente git flow feature publish
+
+# POdemos descargar el cogido para verficarlo
+
+git fetch origin feature/JeffersonSilva:JeffersonSilva
+git checkout JeffersonSilva
+git checkout feature/HU11_JuanSucarsales
+git branch -D JeffersonSilva
+
+# Si todo esta OK, merge(fusionar) a nuestro codigo develop
+git pull origin develop:develop
+git flow feature finish HU11_JuanSucarsales
+git pull origin develop
+git push origin develop
+
+# Si sale ERROR, se debe de actualizar el develop
+git pull origin develop:develop
+git flow feature finish HU11_JuanSucarsales
+git push origin develop:develop
+
+# Si sale un erro de conflict
+# ubica el archivo en conficto y corrijelo
+git add .
+git commit -m "Fixed conflict"
+git push origin develope
