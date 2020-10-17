@@ -7,9 +7,6 @@ public class PieroCarrion17 {
 	public Float getId() {
 		return id;
 	}
-	public void setId(Float id) {
-		this.id = id;
-	}
 	public String getCadena() {
 		return cadena;
 	}
@@ -22,5 +19,9 @@ public class PieroCarrion17 {
 	public void setPierocarrion(PieroCarrion17 pierocarrion) {
 		this.pierocarrion = pierocarrion;
 	}
+	public void setId(Float id) {
+		this.id = id;
+	}
+
 	
 }
