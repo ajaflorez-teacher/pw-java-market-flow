@@ -1,10 +1,10 @@
 package pe.edu.upc.market.models.entities;
 
+
 public class PieroCarrion17 {
 	private Float id;
 	private String cadena;
 	private PieroCarrion17 pierocarrion;
-	
 	public Float getId() {
 		return id;
 	}
@@ -23,6 +23,4 @@ public class PieroCarrion17 {
 	public void setPierocarrion(PieroCarrion17 pierocarrion) {
 		this.pierocarrion = pierocarrion;
 	}
-	
-	
 }
