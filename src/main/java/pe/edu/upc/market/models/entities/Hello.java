@@ -59,7 +59,7 @@ public class Hello{	// upper Cammel case
 	@OneToMany(mappedBy = "cliente")
 	private List<Pedido> pedidos;
 	
-	public Cliente() {
+	public void Cliente() {
 		pedidos = new ArrayList<Pedido>();
 		this.distritoId = 0;
 	}
